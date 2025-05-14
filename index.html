@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yummy Exam</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-black">
+
+    <!-- Sidebar -->
+    <div id="sidebar" class="bg-black text-white d-flex position-fixed top-0 start-0 vh-100">
+        <!-- Sidebar Content  -->
+        <div class="sidebar-content d-flex flex-column justify-content-between">
+            <ul class="nav flex-column">
+                <li class="nav-item"><a class="nav-link text-white" href="#search" id="searchLink">Search</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="#categories" id="categoriesLink">Categories</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="#area" id="areaLink">Area</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="#ingredients" id="ingredientsLink">Ingredients</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="#contact" id="contactLink">Contact Us</a></li>
+            </ul>
+            <div class="sidebar-footer text-white">
+                <div class="social-icons mb-2">
+                    <i class="fab fa-facebook-f p-1"></i>
+                    <i class="fab fa-twitter p-1"></i>
+                    <i class="fas fa-globe p-1"></i>
+                </div>
+                <p class="small">Copyright © 2019 All Rights Reserved.</p>
+            </div>
+        </div>
+
+        <!-- Toggle Bar -->
+        <div id="menu-toggle" class="bg-white d-flex flex-column justify-content-between align-items-center py-4 px-1" onclick="toggleSidebar()">
+            <div class="logo">
+                <img src="images/logo.png" alt="Logo" style="width: 45px;">
+            </div>
+            <div id="toggle-icon" class="text-black">
+                <i class="fa-solid fa-bars fa-2x"></i> 
+            </div>
+            <div class="theIconsOfBar d-flex flex-column">
+                <div class="text-black text-center pb-2"><i class="fa-solid fa-globe"></i></div>
+                <div class="text-black text-center"><i class="fa-solid fa-share-nodes"></i></div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Main Content Area -->
+    <div id="main-content" class="container-fluid py-5">
+
+        <!-- Search section  -->
+        <div id="search-section" class="container my-5">
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <input id="searchName" type="search" class="form-control bg-transparent text-white" placeholder="Search By Name">
+                </div>
+                <div class="col-md-6 mb-3">
+                    <input id="searchLetter" type="search" maxlength="1" class="form-control bg-transparent text-white" placeholder="Search By First Letter..">
+                </div>
+            </div>
+        </div>
+
+        <!-- categories -->
+        <div class="row g-4" id="mealRow">
+          
+        </div>
+
+    </div> 
+
+    
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
